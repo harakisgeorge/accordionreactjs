@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+/* Global Styles */
+:root {
+  --gh-pattern-1: #fff4f9;
+  --gh-pattern-2: #ffebf1;
+  --gh-pattern-3: #ffe3d7;
+  --gh-pattern-4: #ffe2b1;
+  --gh-pattern-5: #ffea8b;
+
+  --gh-green-0: #22ae73;
+  --gh-green-1: #b9f3cd;
+  --gh-green-2: #96ed85;
+  --gh-green-3: #73e79c;
+  --gh-green-4: #51e183;
+  --gh-green-5: #2edc6b;
+  --gh-green-6: #21c058;
+  --gh-green-7: #1b9d48;
+  --gh-green-8: #157a38;
+  --gh-green-9: #0f5728;
+  --gh-green-10: #062310;
+
+  --gh-blue-0: #e3f1f7;
+  --gh-blue-1: #e6ebff;
+  --gh-blue-2: #a2ddf6;
+  --gh-blue-3: #7dcff2;
+  --gh-blue-4: #58c1ee;
+  --gh-blue-5: #33b4eb;
+  --gh-blue-6: #16a3df;
+  --gh-blue-7: #1287ba;
+  --gh-blue-8: #0f6c95;
+  --gh-blue-9: #0a41fa;
+  --gh-blue-10: #101068;
+
+  --gh-grey-1: #cccccc;
+  --gh-grey-2: #adadad;
+  --gh-grey-3: #999999;
+  --gh-grey-4: #757575;
+  --gh-grey-5: #666666;
+
+  --gh-pink-1: #fff0f7;
+  --gh-pink-2: #efa9ca;
+  --gh-pink-3: #e986b4;
+  --gh-pink-4: #e3649f;
+  --gh-pink-5: #da3582;
+
+  --gh-red-1: #e22452;
+  --gh-red-2: #ce2727;
+  --gh-red-3: #bc2424;
+
+  --gh-yellow-1: #ffedc2;
+  --gh-yellow-2: #f6e4be;
+  --gh-yellow-3: #ffd470;
+  --gh-yellow-4: #ffc847;
+
+  --gh-orange-1: #ffbc1f;
+  --gh-orange-2: #f5ab00;
+  --gh-orange-3: #f9aa81;
+
+  --gh-brown-1: #a37200;
+  --gh-brown-2: #7a5600;
+  --gh-brown-3: #523900;
+  --gh-brown-4: #823d40;
+
+  --transition: all 0.3s linear;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.05rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.55rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 80%;
+  height: 190px;
+  background-color: var(--gh-blue-3);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header-text-1,
+.header-text-2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.expendable-button {
+  background-color: transparent;
+  color: var(--gh-blue-5);
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  width: 2px;
+  margin-right: 10px;
+}
+
+.main-title {
+  margin: 20px 0 10px 0;
+  text-align: left;
+  font-weight: 500;
+}
+
+.main-title-underline {
+  width: 320px;
+  text-align: left;
+  height: 0.15rem;
+  background: var(--gh-blue-10);
+  margin-bottom: 40px;
+}
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 600px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.underline {
+  width: 100%;
+  height: 0.15rem;
+  background: var(--gh-blue-2);
+  margin: 20px auto;
+}
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+
+.column-container:hover {
+  background-color: var(--gh-blue-1);
+  width: 100%;
+}
+
+.text-container {
+  text-align: left;
+  max-height: 350px;
+  opacity: 1;
+  animation-name: textanimate;
+  animation-duration: 1s;
+}
+
+@keyframes textanimate {
+  0% {
+    opacity: 0;
+    max-height: 15px;
+  }
+  100% {
+    opacity: 1;
+    max-height: 350px;
+  }
+}
